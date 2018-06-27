@@ -131,7 +131,7 @@ async function createConv(person, appOptions, timeOfDay) {
 }
   
 module.exports = function (controller) {
-  
+  // controller.say()
   controller.hears(['^projects$'], 'direct_message,direct_mention', function (bot, message) {
     bot.reply(message, {
       "text": "What did you work on this ____ (AM/PM)?",
