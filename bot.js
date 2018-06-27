@@ -44,14 +44,14 @@ controller.startTicking();
 
 new CronJob('0 */1 * * * *', () => {
     bot.api.im.open({
-      user: 'UBEN7TR38'
+      user: 'UBEN7TR38' // any user id
     }, (err, res) => {
       if (err) {
         bot.botkit.log('Failed to open IM with user', err)
       }
       console.log(res);
       bot.startConversation({
-        user: 'UBEN7TR38',
+        user: 'UBEN7TR38', // any user id
         channel: res.channel.id,
         text: 'WOWZA... 1....2'
       }, (err, convo) => {

@@ -1,10 +1,7 @@
-var CronJob = require('cron').CronJob;
-
+// TODO: Move cron job here from bot.js 
 
 
 module.exports = function (controller) {
-
-  
 
   controller.hears(['^projects$'], 'direct_message,direct_mention', function (bot, message) {
     bot.reply(message, {
