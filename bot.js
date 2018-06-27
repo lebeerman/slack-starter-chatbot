@@ -7,7 +7,6 @@
 
 
 This is a sample Slack bot built with Botkit.
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 var env = require('node-env-file');
 env(__dirname + '/.env');
@@ -25,7 +24,7 @@ var debug = require('debug')('botkit:main');
 var bot_options = {
     clientId: process.env.clientId,
     clientSecret: process.env.clientSecret,
-    // debug: true,
+    debug: true,
     scopes: ['bot']
 };
 
