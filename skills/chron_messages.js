@@ -10,7 +10,7 @@ module.exports = function (controller) {
         "text": "Choose the project you've allocated time to:",
         "fallback": "Sorry, you don't have any Projects or you arent part of a Unit.",
             "callback_id": "project_work",
-            "color": "#FF6D27",
+            "color": "#000000",
             "attachment_type": "default",
             "actions": [{
                 "name": "test-proj1",

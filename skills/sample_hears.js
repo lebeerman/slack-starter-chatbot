@@ -21,7 +21,6 @@ module.exports = function(controller) {
     });
 
     controller.hears('interactive', 'direct_message', function (bot, message) {
-
         bot.reply(message, {
             attachments: [{
                 title: 'Do you want to interact with my buttons?',
@@ -90,7 +89,6 @@ module.exports = function(controller) {
         // check message.actions and message.callback_id to see what action to take...
         console.log('REPLYING:', message )
         bot.replyInteractive(message, {
-            text: "Excellent...",
             attachments: [{
                 title: 'Thanks for answering!',
                 callback_id: 'thankyou',

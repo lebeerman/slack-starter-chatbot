@@ -42,7 +42,7 @@ const bot = controller
   .startRTM();
 controller.startTicking();
 
-new CronJob('0 */1 * * * *', () => {
+new CronJob('*/2 * * * *', () => {
     bot.api.im.open({
       user: 'UBEN7TR38' // any user id
     }, (err, res) => {
